@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Carnes del Rancho | Excelencia en Cortes Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#8e9192",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed-variant": "#474646",
+                    "tertiary": "#e9c349",
+                    "on-primary": "#313030",
+                    "tertiary-fixed": "#ffe088",
+                    "inverse-on-surface": "#2f3131",
+                    "primary-container": "#0a0a0a",
+                    "outline-variant": "#444748",
+                    "surface-container-high": "#282a2b",
+                    "on-surface-variant": "#c4c7c7",
+                    "secondary-fixed": "#ffdad8",
+                    "on-tertiary-container": "#947600",
+                    "primary": "#c9c6c5",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#37393a",
+                    "surface-variant": "#333535",
+                    "on-primary-container": "#7b7979",
+                    "on-surface": "#e2e2e2",
+                    "surface": "#121414",
+                    "primary-fixed": "#e5e2e1",
+                    "surface-container-low": "#1a1c1c",
+                    "on-error": "#690005",
+                    "on-primary-fixed": "#1c1b1b",
+                    "secondary-fixed-dim": "#ffb3b1",
+                    "surface-container-lowest": "#0c0f0f",
+                    "surface-dim": "#121414",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "secondary": "#ffb3b1",
+                    "surface-container-highest": "#333535",
+                    "primary-fixed-dim": "#c9c6c5",
+                    "on-background": "#e2e2e2",
+                    "inverse-surface": "#e2e2e2",
+                    "secondary-container": "#881c25",
+                    "on-secondary-fixed": "#410007",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "on-secondary-container": "#ff9997",
+                    "on-tertiary": "#3c2f00",
+                    "surface-tint": "#c9c6c5",
+                    "inverse-primary": "#5f5e5e",
+                    "background": "#121414",
+                    "surface-container": "#1e2020",
+                    "on-secondary-fixed-variant": "#881c25",
+                    "tertiary-container": "#0e0900",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-secondary": "#680011"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "section-gap": "120px",
+                    "gutter-md": "24px",
+                    "margin-desktop": "64px",
+                    "gutter-sm": "16px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "body-lg": ["Manrope"],
+                    "label-sm": ["Manrope"],
+                    "label-md": ["Manrope"],
+                    "body-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { background-color: #0A0A0A; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant shadow-sm">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<img alt="Logo Carnes del Rancho" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRVozVpm-7cAQOERurkI32oWcQCKyo7KhWdI_TQCE_7RIHMZd_-4MvV8nWbRyrY8zhCNjqbBFHdn_s8eD0iP_kame-SNhc5-pNe1YAg_oa-76jc2vDpW67B_iXDGRQTnEumTmyFirurBT1eH5ykXTitDGj11feMeXME6cnB_mUAgHhN68_wF7cjL11SPUVfJ59htR2h724ODRusN7O4If9AceZpPMKLbesQ-l0zxpJA5cf0oO8jN9sG4vNhSFVHdzpWBl9T0wBdmS5"/>
+<span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">Carnes del Rancho</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="../categor_a_res_carnes_del_rancho/code.html">Res</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="../categor_a_cerdo_carnes_del_rancho/code.html">Cerdo</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="../categor_a_pollo_carnes_del_rancho/code.html">Pollo</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="../cortes_premium_carnes_del_rancho/code.html">Cortes Premium</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-sm border border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-md w-48 text-on-surface placeholder:text-on-surface-variant" placeholder="Buscar cortes..." type="text"/>
+</div>
+<a href="../carrito_de_compras_carnes_del_rancho/code.html" class="relative hover:text-tertiary transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-1.5 py-0.5 rounded-full">2</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-black/60 z-10"></div>
+<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIO0zS4rdoeunh9qYBYjvIzqGM7U8Wy4KwnqbQTrgp7dswcG3iy2OtsMmi_v66TqDIS8QnDyWpvnrGBrV64B3982dDiV94mjmp6hXVWDUPZS3q2P0TfunUAqox8z8-24wibkW0uViqCR_tgBdIlUEuHCWqLfynhO4LtbNQGqp1Ur7iOgtYvEDA3FY_sGiAjZr8DfD2v6sBVaz_-uEB2Q-jXeKRcFZsbCg7yZsa78lsBc3jLeVHE5CRI2VYqLuonUwaUa_LTHqW83dz');"></div>
+<div class="relative z-20 text-center max-w-[800px] px-margin-mobile">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-8">La mejor carne fresca directo a tu mesa</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-[600px] mx-auto">Experiencia gourmet con los cortes más exclusivos, seleccionados cuidadosamente por nuestros maestros carniceros para garantizar la máxima calidad.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<a href="../categor_a_res_carnes_del_rancho/code.html" class="px-8 py-4 bg-white text-black font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary transition-all duration-300 text-center inline-block">Comprar ahora</a>
+<a href="../cortes_premium_carnes_del_rancho/code.html" class="px-8 py-4 bg-transparent border border-secondary text-white font-label-md text-label-md uppercase tracking-widest hover:bg-white/10 transition-all duration-300 text-center inline-block">Ver catálogo</a>
+</div>
+</div>
+</header>
+<!-- Category Navigation -->
+<section class="py-16 bg-surface-container-lowest border-b border-outline-variant overflow-x-auto no-scrollbar">
+<div class="max-w-[1200px] mx-auto px-margin-desktop flex justify-between gap-8 min-w-max">
+<a href="../categor_a_res_carnes_del_rancho/code.html" class="flex flex-col items-center gap-3 group">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-3xl group-hover:text-tertiary">restaurant</span>
+</div>
+<span class="font-label-md text-label-md">Res</span>
+</a>
+<a href="../categor_a_cerdo_carnes_del_rancho/code.html" class="flex flex-col items-center gap-3 group">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-3xl group-hover:text-tertiary">set_meal</span>
+</div>
+<span class="font-label-md text-label-md">Cerdo</span>
+</a>
+<a href="../categor_a_pollo_carnes_del_rancho/code.html" class="flex flex-col items-center gap-3 group">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-3xl group-hover:text-tertiary">egg_alt</span>
+</div>
+<span class="font-label-md text-label-md">Pollo</span>
+</a>
+<a href="../cortes_premium_carnes_del_rancho/code.html" class="flex flex-col items-center gap-3 group">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-3xl group-hover:text-tertiary">diamond</span>
+</div>
+<span class="font-label-md text-label-md">Cortes Premium</span>
+</a>
+<button class="flex flex-col items-center gap-3 group">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-3xl group-hover:text-tertiary">outdoor_grill</span>
+</div>
+<span class="font-label-md text-label-md">Carne para asar</span>
+</button>
+<button class="flex flex-col items-center gap-3 group">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-3xl group-hover:text-tertiary">inventory_2</span>
+</div>
+<span class="font-label-md text-label-md">Paquetes familiares</span>
+</button>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-section-gap max-w-[1200px] mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest mb-4 block">Selección Especial</span>
+<h2 class="font-headline-lg text-headline-lg">Cortes Destacados</h2>
+</div>
+<a class="font-label-md text-label-md border-b border-on-surface pb-1 hover:text-tertiary hover:border-tertiary transition-colors" href="#">Ver todos los cortes</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-md">
+<!-- Product 1 -->
+<div class="bg-surface-container border border-outline-variant overflow-hidden group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A macro cinematic photograph of a raw, perfectly marbled Tomahawk steak resting on a dark slate board. The meat has deep red tones with intricate white fat marbling, dusted with coarse sea salt and cracked black pepper. High-key spotlights catch the texture of the meat, creating a luxurious and gourmet aesthetic. The background is a dark, moody butcher shop setting with subtle metallic gold accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ep0JhgrJAJFGfkSwI5CHgaqX7QAPnGUxWLrmGLa28iaSSkxqnu7jE9885_43AJUfKtToa1LBmRXsPmfef1pCeKBgCR9Wn2aO0q09nMBH2HKGoBWL4JcIAUlLW1OxBVeOcutK-k4UsUox4VBp6Z9myMaaY15H3ptc03xxCWiqrtl19q0Eb3ysyfdbV4zT3GjK3c8blzHbGPh1aOw1B24qQ0hmKb-lX5-Fq47fQ5SM16bpyymvm-NH4O7TdAtpkUl_Fc44S3S-Znvw"/>
+<div class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 font-label-sm text-label-sm">DRY-AGED</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md mb-2">Tomahawk Premium</h3>
+<div class="flex justify-between items-center mb-6">
+<span class="text-tertiary font-headline-md text-[24px]">$850/kg</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aprox. 1.2kg</span>
+</div>
+<button class="w-full py-4 border border-on-surface font-label-md text-label-md uppercase tracking-widest hover:bg-on-surface hover:text-surface transition-all">Agregar al carrito</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container border border-outline-variant overflow-hidden group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A close-up shot of a raw Picanha roast, featuring its signature thick white fat cap and deep ruby-red meat. The cut is elegantly presented on a rustic wooden butcher's block under warm, dramatic lighting. A sprinkle of large salt crystals highlights the texture of the fat. The overall vibe is one of traditional craftsmanship and premium culinary quality, consistent with a dark, high-end butcher shop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXbxNH_dvDXuGZEtOy1WLuINQQRwjIV32N8RKv26Rt4JAMrBCZxsoEwbF2bUyCb_7JAxvsUUjz92E5uo3RPxJzrTjWYr-rsB6Ml1sbw-kz8BQjuXptS8D-bY9LBQGAXYZbiWtvEZfP4AxwkRFu_HygDYBo-RAjO-kufehsjraVFxtyga3rmswzxiAaWYlXqGExjbFyUh3bNntYBlmC3904BVbok-iSkR4bsoc-ZJFBP_nYwHuhQ7yH9K-8lqna3k2KGXesExQ32q63"/>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 font-label-sm text-label-sm">EXPORTACIÓN</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md mb-2">Picaña de Exportación</h3>
+<div class="flex justify-between items-center mb-6">
+<span class="text-tertiary font-headline-md text-[24px]">$620/kg</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aprox. 1.5kg</span>
+</div>
+<button class="w-full py-4 border border-on-surface font-label-md text-label-md uppercase tracking-widest hover:bg-on-surface hover:text-surface transition-all">Agregar al carrito</button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container border border-outline-variant overflow-hidden group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A top-down architectural view of several Ribeye steaks arranged on a minimalist dark grey surface. Each steak exhibits exquisite marbling and a fresh, vibrant red color. The lighting is crisp and cool, emphasizing the freshness of the meat in a professional kitchen or high-end retail environment. Small sprigs of rosemary and cloves of garlic are scattered artistically around the meat to suggest a gourmet preparations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaGUFwh9p5HsLbpq0rNkJbofvtB6r2uTNEzpSfyUzmOwkgMd6u5A6bL79YTxpuMfeBX3Xpw7tMqmYPGBVMFxjTnB_qR7KnlOLY3cJL5q6bNIs1rEGva3N4gz2yggoWLoQc51SILkfQlrVl9HtNKgn0dfj6zJFctTIsefTFDhVUHEOwrTWuT6gewQhLUtUdLvbiQOzI2szCT3bJGjnRGlXo0ZFGHN4xPMr6qDmE0K9tnbaViNjtZo-H7jdOocupOz2An_pH6FOEkVs1"/>
+<div class="absolute top-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-label-sm text-label-sm">WAGYU SELECTION</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md mb-2">Ribeye Wagyu A5</h3>
+<div class="flex justify-between items-center mb-6">
+<span class="text-tertiary font-headline-md text-[24px]">$2,400/kg</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aprox. 400g</span>
+</div>
+<button class="w-full py-4 border border-on-surface font-label-md text-label-md uppercase tracking-widest hover:bg-on-surface hover:text-surface transition-all">Agregar al carrito</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-md">
+<div class="text-center group">
+<div class="mb-6 inline-block p-4 rounded-sm border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-4xl text-tertiary">local_shipping</span>
+</div>
+<h4 class="font-label-md text-label-md mb-2 uppercase">Entrega rápida</h4>
+<p class="text-on-surface-variant font-body-md">Recibe tu pedido el mismo día con nuestro sistema de logística especializado.</p>
+</div>
+<div class="text-center group">
+<div class="mb-6 inline-block p-4 rounded-sm border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-4xl text-tertiary">eco</span>
+</div>
+<h4 class="font-label-md text-label-md mb-2 uppercase">Carne fresca diaria</h4>
+<p class="text-on-surface-variant font-body-md">Procesamos nuestros cortes cada mañana para asegurar la máxima frescura y sabor.</p>
+</div>
+<div class="text-center group">
+<div class="mb-6 inline-block p-4 rounded-sm border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-4xl text-tertiary">verified</span>
+</div>
+<h4 class="font-label-md text-label-md mb-2 uppercase">Calidad garantizada</h4>
+<p class="text-on-surface-variant font-body-md">Certificaciones internacionales que avalan la procedencia y manejo de nuestra carne.</p>
+</div>
+<div class="text-center group">
+<div class="mb-6 inline-block p-4 rounded-sm border border-outline-variant group-hover:border-tertiary transition-colors">
+<span class="material-symbols-outlined text-4xl text-tertiary">hotel_class</span>
+</div>
+<h4 class="font-label-md text-label-md mb-2 uppercase">Cortes premium</h4>
+<p class="text-on-surface-variant font-body-md">Seleccionamos únicamente el top 5% de la producción para nuestra línea Rancho.</p>
+</div>
+</div>
+</section>
+<!-- About Us -->
+<section class="py-section-gap max-w-[1200px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A vintage-toned black and white photograph of an artisanal butcher shop interior. A master butcher is seen in focus, wearing a traditional apron and working with surgical precision on a large cut of meat. The environment features hanging copper utensils, clean white tile walls, and a large wooden carving block. The mood conveys a sense of timeless tradition, heritage, and uncompromising attention to detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7DS47EsoJlDL1tNwnnyyulaZ-s1_XCcSmCTlyimn6Igcuafh9p46eygwVSfFU5J59CdVSSrDdt2DBS5Q_d3vgXnCR-E16YZfnXQ4O_2maxDhEVIOFrON-Cxz-57lBGRWoFvsx8AVHdrx6whUTi0O7x-LkXP1AcsPJ8jCTnCNSOkrJDk8IpPVqOYFDSE_Z1H5dXFOu43J_hiu5-5aJKwZebDOgTvBgoz_3uPrYZbhqbDlcqdsSAk5BK9AKnC-plkXG7z6WbS6Tde8n"/>
+</div>
+<div class="absolute -bottom-10 -right-10 bg-surface-container-high p-8 border border-outline-variant hidden md:block">
+<span class="font-display-lg text-[48px] text-tertiary leading-none block mb-2">1954</span>
+<span class="font-label-md text-label-md uppercase tracking-widest">Desde hace tres generaciones</span>
+</div>
+</div>
+<div>
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest mb-6 block">Nuestra Historia</span>
+<h2 class="font-headline-lg text-headline-lg mb-8">Tradición Familiar, Pasión por la Carne</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                    En Carnes del Rancho, entendemos que la carne es más que un alimento; es el centro de las celebraciones familiares y la máxima expresión de la gastronomía. Desde 1954, nuestra familia ha perfeccionado el arte del despiece y la maduración.
+                </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                    Trabajamos directamente con ranchos locales que comparten nuestra visión de bienestar animal y sostenibilidad, asegurando que cada bocado que llega a tu mesa sea un testimonio de nuestra herencia.
+                </p>
+<button class="px-10 py-4 bg-on-surface text-surface font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary transition-all">Leer nuestra historia completa</button>
+</div>
+</div>
+</section>
+<!-- Weekly Offers Banner -->
+<section class="py-section-gap px-margin-desktop">
+<div class="max-w-[1200px] mx-auto relative h-[400px] flex items-center bg-surface-container overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover z-0" data-alt="A dramatic wide shot of a selection of prime meat cuts being seasoned over an open charcoal flame. Sparks of light and subtle smoke rise from the grill, creating a visceral and appetizing atmosphere. The lighting is high-contrast, with the golden glow of the fire illuminating the rich reds of the meat. This cinematic visual serves as a high-contrast promotional banner for weekly offers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe479zDTVtOqJ4rRfnrM2YB6ASOM2RQIIYImyVRfBIPM-b5Cg3IonTFr52W9zAUd4x7nWZmpGFeKDR0rMQXK2rTqcrghyK29JjrWR-pfYvIczXzTBYM0Cfj4-7iJ_hDALhwXWkctD2gYzsovhpMlwzNfsaNLaKURrY7bKzVLX3q5BcRloBTz2ZsXcyPXwi49Mf2Ajqthi0YLRiElVTIPNU3jPS_kmsebpkvAXhRqT2c4u1X5clIyvcTY1_rcwDQjxg_7SRQCe2e1oj"/>
+<div class="relative z-20 px-16 max-w-[600px]">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest mb-4 block">Ofertas de la semana</span>
+<h2 class="font-headline-lg text-headline-lg mb-6 text-white">Paquete Parrillada Rancho: 25% OFF</h2>
+<p class="text-white/80 mb-8 font-body-md">Incluye 2kg de Ribeye, 1kg de Picaña y 500g de Chorizo Argentino Artesanal.</p>
+<button class="px-8 py-4 bg-tertiary text-on-tertiary font-label-md text-label-md uppercase tracking-widest hover:scale-105 transition-transform">Aprovechar oferta</button>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-[1200px] mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest mb-4 block">Experiencias</span>
+<h2 class="font-headline-lg text-headline-lg">Lo que dicen nuestros clientes</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-md">
+<div class="bg-surface p-8 border border-outline-variant flex flex-col justify-between">
+<div>
+<div class="flex gap-1 mb-6 text-tertiary">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 leading-relaxed">"La calidad del Tomahawk es simplemente incomparable. No he encontrado una carne tan suave y con tanto sabor en ningún otro lugar de la ciudad."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container border border-outline-variant overflow-hidden">
+<img alt="Antonio R." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbZ8AeID6X_X8swb97c2ZICy9aWzFWTmbdl63F5quiTOveWxU4JdItooirE0cYiOj8Q-q_-93lN7ocvJfVX-U1SU29wytueTvon8aiS7qk19uBy24XRjE3zyZIDvOhmCSHd0sXM7op1FmECLQOoCcwrhj2oirj7AkyA0iNc4UZFOJBPCEg-r3MlZ6AjXbWAHef1bzP2y-9dIMFPSjHKWpmk0TWTfw9gWyW1PWH9smujCY4YoB4EOnppdj4uGmMqbBFNJdIdcTuhf63"/>
+</div>
+<div>
+<p class="font-label-md text-label-md">Antonio Rodríguez</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Chef Profesional</p>
+</div>
+</div>
+</div>
+<div class="bg-surface p-8 border border-outline-variant flex flex-col justify-between">
+<div>
+<div class="flex gap-1 mb-6 text-tertiary">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 leading-relaxed">"El servicio de entrega a domicilio es impecable. La carne llega perfectamente empacada al vacío y a la temperatura correcta. ¡Súper recomendado!"</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container border border-outline-variant overflow-hidden">
+<img alt="María L." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe3zxiZobdPSYvskuH7JhyPZlc6u1wPa2bJYG_-6S_rmkMD2Ajfh0MB9Y32-dbdzEmjMtVkVDs58mZ5lSIZibiEeDBg8pXSBwIrRozA6z_2k5MR-MTE6yUfxF9eQcYyB_C9ItPwLNS2qKB15ADdW0MxVC9X-RQw1YYKb1PMn8rxPsXQPGACEYjnpMEjx7IXCEBpkcaDM__69UgqVQ6877Ip7yEmExu-WK0pK9mf7-MvweOKWSfaC8U1wQidTBgzJ64Er5ZgCcooTGZ"/>
+</div>
+<div>
+<p class="font-label-md text-label-md">María López</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cliente Frecuente</p>
+</div>
+</div>
+</div>
+<div class="bg-surface p-8 border border-outline-variant flex flex-col justify-between">
+<div>
+<div class="flex gap-1 mb-6 text-tertiary">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 leading-relaxed">"Los cortes premium son de otro nivel. El Ribeye Wagyu A5 fue una experiencia religiosa para mi familia en Navidad. Gracias por mantener esta calidad."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container border border-outline-variant overflow-hidden">
+<img alt="Ricardo G." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxkjKPIu7enu_oqkLifstB8hMj-oAB4tUIiETHNb_Uyp1eSPlQ8kelDr0DUm2_DFT6gPYzOm5qRH7iXxGJddpIQ73ZVR8F-aNgZPa73qJXcOGPRe0P82QM4nJvTR2ooP1-U9nbiNULqltNtyEK9HEw-9Rdr2bLSKvIElK3TVqGJmHkTmM3YiOKKyKMWPyKXj76EFFHnhPjfPNBBkxKW8lOMw7oYppIAqtoCqTPXw4H82J8hhg9UHx28hsMwcbeWy-4bEc5S_zC-ejn"/>
+</div>
+<div>
+<p class="font-label-md text-label-md">Ricardo González</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Gourmet Enthusiast</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WhatsApp Float -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center" href="https://wa.me/521234567890" target="_blank">
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.938 3.659 1.432 5.631 1.432h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+</a>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-md max-w-[1200px] mx-auto px-margin-desktop">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<img alt="Logo Carnes del Rancho" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRVozVpm-7cAQOERurkI32oWcQCKyo7KhWdI_TQCE_7RIHMZd_-4MvV8nWbRyrY8zhCNjqbBFHdn_s8eD0iP_kame-SNhc5-pNe1YAg_oa-76jc2vDpW67B_iXDGRQTnEumTmyFirurBT1eH5ykXTitDGj11feMeXME6cnB_mUAgHhN68_wF7cjL11SPUVfJ59htR2h724ODRusN7O4If9AceZpPMKLbesQ-l0zxpJA5cf0oO8jN9sG4vNhSFVHdzpWBl9T0wBdmS5"/>
+<span class="font-headline-md text-headline-md text-on-surface">Carnes del Rancho</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Excelencia en Cortes Premium desde 1954. Comprometidos con el sabor y la tradición.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined">call</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Navegación</h5>
+<ul class="flex flex-col gap-4">
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary underline transition-all" href="#">Ubicaciones</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary underline transition-all" href="#">Horarios</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary underline transition-all" href="#">Contacto</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary underline transition-all" href="#">Aviso de Privacidad</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Categorías</h5>
+<ul class="flex flex-col gap-4">
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary underline transition-all" href="#">Res y Ternera</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary underline transition-all" href="#">Cerdos de Granja</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary underline transition-all" href="#">Pollo Orgánico</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary underline transition-all" href="#">Cortes Madurados</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Newsletter</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Suscríbete para recibir ofertas exclusivas y consejos de cocina.</p>
+<div class="flex flex-col gap-2">
+<input class="bg-surface border-0 border-b border-outline-variant focus:ring-0 focus:border-tertiary p-3 text-on-surface" placeholder="Tu correo electrónico" type="email"/>
+<button class="w-full mt-2 py-3 bg-on-surface text-surface font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary transition-all">Suscribirse</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-margin-desktop mt-20 pt-8 border-t border-outline-variant text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Carnes del Rancho. Excelencia en Cortes Premium.</p>
+</div>
+</footer>
+</body></html>

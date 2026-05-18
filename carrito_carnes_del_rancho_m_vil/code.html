@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#e2e2e2",
+                        "surface": "#121414",
+                        "primary-container": "#0a0a0a",
+                        "surface-bright": "#37393a",
+                        "primary": "#c9c6c5",
+                        "inverse-primary": "#5f5e5e",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-container": "#1e2020",
+                        "surface-dim": "#121414",
+                        "on-tertiary-container": "#947600",
+                        "inverse-on-surface": "#2f3131",
+                        "primary-fixed": "#e5e2e1",
+                        "on-primary-fixed": "#1c1b1b",
+                        "secondary": "#ffb3b1",
+                        "secondary-fixed": "#ffdad8",
+                        "surface-variant": "#333535",
+                        "surface-container-highest": "#333535",
+                        "on-secondary-fixed": "#410007",
+                        "on-tertiary": "#3c2f00",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "background": "#121414",
+                        "secondary-container": "#881c25",
+                        "surface-container-low": "#1a1c1c",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "on-surface": "#e2e2e2",
+                        "surface-container-lowest": "#0c0f0f",
+                        "outline-variant": "#444748",
+                        "inverse-surface": "#e2e2e2",
+                        "surface-tint": "#c9c6c5",
+                        "on-error": "#690005",
+                        "tertiary-container": "#0e0900",
+                        "on-secondary-container": "#ff9997",
+                        "on-primary-container": "#7b7979",
+                        "on-primary": "#313030",
+                        "on-primary-fixed-variant": "#474646",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#680011",
+                        "outline": "#8e9192",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#282a2b",
+                        "on-secondary-fixed-variant": "#881c25",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "on-surface-variant": "#c4c7c7",
+                        "on-tertiary-fixed": "#241a00",
+                        "error": "#ffb4ab",
+                        "tertiary": "#e9c349"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter-sm": "16px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "gutter-md": "24px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Manrope"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "label-md": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #121414;
+            color: #e2e2e2;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile h-16 bg-background dark:bg-background text-on-background dark:text-on-background border-b border-surface-variant dark:border-surface-variant z-50">
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<h1 class="font-headline-md text-headline-md uppercase tracking-widest text-on-background">METICULOUS</h1>
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-150 ease-in-out relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container text-[10px] rounded-full h-4 w-4 flex items-center justify-center font-bold">2</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-48 px-margin-mobile">
+<div class="mb-10">
+<h2 class="font-headline-md text-headline-md text-on-background mb-2">Seu Carrinho</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">2 ITENS SELECIONADOS</p>
+</div>
+<!-- Cart Items List -->
+<div class="space-y-base">
+<!-- Item 1: Ribeye Wagyu A5 -->
+<div class="bg-surface-container-low border border-surface-variant p-4 flex gap-gutter-sm items-center">
+<div class="w-24 h-24 flex-shrink-0 bg-surface-container-highest overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A macro cinematic shot of a raw A5 Wagyu Ribeye steak, showcasing intricate white marbling against deep ruby red meat. The lighting is dramatic and high-key, highlighting the glossy texture and sculptural quality of the beef. The setting is a sterile, dark gourmet kitchen with a minimalist black stone surface, reflecting the premium METICULOUS brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCunW1qhD5Et1LxkjWMFGYQgC0cHl4jMlKYYgASnOA5Wmxb1XNbhYFJM3i6zP-5OUPtcqcUw3u5qHvImqpXlzKDu_fOBzqpWIyWS6dUXH3zoBnRg5zYGdtzIveuNBlYWjYbpFdIoLH2tNYBYjmTilbz4ozxJ5pFggMBeA-1uav7w_J2bhnfGdPJPMKPgq_tuQ9CUmMhWNOsHrB0V8BZgdt-Aq57Elc46WeIOMr5fyUfVBmSQEJksQD29stI3q0cWdBJlRmyjBoMXCDX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary-container/40 to-transparent"></div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<span class="inline-block bg-surface-container-highest border border-tertiary-fixed text-tertiary text-[10px] font-bold px-2 py-0.5 mb-1 tracking-widest uppercase">Wagyu Reserve</span>
+<h3 class="font-label-md text-label-md text-on-background uppercase tracking-wider">Ribeye Wagyu A5</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">350g — JAPANESE ORIGIN</p>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center border border-outline-variant bg-surface-container">
+<button class="px-3 py-1 text-on-surface hover:bg-surface-bright transition-colors">-</button>
+<span class="px-3 py-1 font-label-md text-on-background">1</span>
+<button class="px-3 py-1 text-on-surface hover:bg-surface-bright transition-colors">+</button>
+</div>
+<span class="font-label-md text-label-md text-on-background">R$ 580,00</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Tomahawk -->
+<div class="bg-surface-container-low border border-surface-variant p-4 flex gap-gutter-sm items-center">
+<div class="w-24 h-24 flex-shrink-0 bg-surface-container-highest overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A dramatic studio photograph of a massive Tomahawk steak with a long, pristine white bone, resting on a charcoal-colored textured background. The meat has a rich, dark red hue with subtle highlights on the grain. The atmosphere is sophisticated and moody, with cinematic shadows and a high-contrast editorial look consistent with a luxury meat purveyor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2BVrR9LUIDXS4SCFra9YPq7E7A5x3Iq_JW-32gZTmGUWaqZTZrM4kfPyJTSYLef2uoM5OtqGePhHqjq7RgVoWP6A-iFRbNbSd2VksWP6DtYHwlLdUF1Ak5gmUfh3-HwINGehAHTdy19uRzVYZHwCRsTJ2N1iOU2QCw6kWGPGlvPhd5Wzs5tjGFK60Pqx89w4RKv6rwSTHnhkviaPqu-OX4SFmG3VUSl3LqF2ik_cqtNi3VcbrbPEhqygqO9jcCjSJZ6tOf_KIpkfT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary-container/40 to-transparent"></div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<span class="inline-block bg-surface-container-highest border border-tertiary-fixed text-tertiary text-[10px] font-bold px-2 py-0.5 mb-1 tracking-widest uppercase">Dry-Aged</span>
+<h3 class="font-label-md text-label-md text-on-background uppercase tracking-wider">Tomahawk</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">1.2kg — 45 DAYS AGED</p>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center border border-outline-variant bg-surface-container">
+<button class="px-3 py-1 text-on-surface hover:bg-surface-bright transition-colors">-</button>
+<span class="px-3 py-1 font-label-md text-on-background">1</span>
+<button class="px-3 py-1 text-on-surface hover:bg-surface-bright transition-colors">+</button>
+</div>
+<span class="font-label-md text-label-md text-on-background">R$ 320,00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Complementary Items -->
+<section class="mt-section-gap">
+<h4 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-gutter-sm">Aperfeiçoe sua Experiência</h4>
+<div class="flex gap-gutter-sm overflow-x-auto pb-4 no-scrollbar">
+<div class="min-w-[160px] bg-surface-container-high p-3 border border-surface-variant">
+<div class="aspect-square bg-surface-container-highest mb-2">
+<img class="w-full h-full object-cover grayscale" data-alt="A gourmet jar of artisanal sea salt flakes with black truffles, presented in a minimalist glass jar with a dark label. The lighting is soft and focused, creating a premium feel. The background is a clean, dark wood surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaksZBPQX8B0Vj7z2Uuw61GNVMU_YbpWyjYfAf7rIPKJr8Pa6L0BmrXpuJDClSfKS9-3u3EBQHXgPZQj1mUaWJr5KVqY4b-BuAIr34ExDNbWqbb5jomonnVNYHA8GOeT1eTAEqwcMsffUl3gWh4XQ206ddedSaEGknqUzReeINTCh55qvs-9qXI2giQCEW46nP2n9rIGVqZYnyf1Ia4M0-MmLET3hD-4wPirk-KDW0ko32v5Oh0g9_Mg2w592kdsWHNu9PU0j1yagp"/>
+</div>
+<p class="font-label-sm text-label-sm uppercase tracking-tighter text-on-background">Sal de Parrilla Trufado</p>
+<p class="font-label-sm text-on-surface-variant mt-1">R$ 45,00</p>
+<button class="mt-2 w-full border border-on-background text-on-background font-label-sm py-1 hover:bg-on-background hover:text-background transition-colors uppercase">Adicionar</button>
+</div>
+<div class="min-w-[160px] bg-surface-container-high p-3 border border-surface-variant">
+<div class="aspect-square bg-surface-container-highest mb-2">
+<img class="w-full h-full object-cover grayscale" data-alt="A high-end Japanese slicing knife with a Damascus steel blade, showing swirling patterns. The handle is dark wood with a brass bolster. It rests on a clean, dark slate surface under dramatic, sterile spotlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2CUYMFzNrb-ldK0QXgh9anlNPeRPrn2odoZHpv0j60Y3QQOGP_L0hPvq0G7aTjQ4NJygVsYJ7p4kiKPIakPvJyu-Ku6vjc6qQ5uJjCqaxS0-E0SvaPbrHk3Ci4zDr5ldQYaqsOMc1wdiWl7-tYLg90Tpk_zv_1E02hJO15D7QPucp7mXEQcRY1DfyjyHGHlMVrUoIXayqzq1Igrng8LjiNzyAdYSKYqAuNASfK4ICTCW2sd1ZEJuBdGBRAx7Qvw0rn9bdL-UvxVfi"/>
+</div>
+<p class="font-label-sm text-label-sm uppercase tracking-tighter text-on-background">Faca Artesanal Chef</p>
+<p class="font-label-sm text-on-surface-variant mt-1">R$ 890,00</p>
+<button class="mt-2 w-full border border-on-background text-on-background font-label-sm py-1 hover:bg-on-background hover:text-background transition-colors uppercase">Adicionar</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Fixed Footer Summary -->
+<footer class="fixed bottom-0 left-0 w-full bg-surface-container-highest border-t border-outline-variant z-50">
+<div class="px-margin-mobile pt-6 pb-safe">
+<div class="space-y-2 mb-6">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-widest">Subtotal</span>
+<span class="font-label-md text-on-background">R$ 900,00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-widest">Entrega Especial</span>
+<span class="font-label-md text-on-background">R$ 25,00</span>
+</div>
+<div class="flex justify-between items-center pt-2 border-t border-surface-variant">
+<span class="font-headline-md text-on-background text-[24px]">TOTAL</span>
+<span class="font-headline-md text-on-background text-[24px]">R$ 925,00</span>
+</div>
+</div>
+<button class="w-full h-16 bg-on-background text-background font-label-md text-label-md uppercase tracking-[0.2em] hover:bg-tertiary-fixed transition-all active:scale-[0.98] duration-150 mb-6">
+                Finalizar Pedido
+            </button>
+</div>
+</footer>
+<!-- Suppressed BottomNavBar visually as per transactional flow, but present in spirit for identity -->
+<!-- The task-focused nature of the cart hides the global nav to focus on the conversion. -->
+</body></html>

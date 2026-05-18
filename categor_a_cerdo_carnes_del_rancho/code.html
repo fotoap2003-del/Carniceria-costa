@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cerdo - Carnes del Rancho | Excelencia en Cortes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#ffb3b1",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "surface-container-highest": "#333535",
+                    "primary": "#c9c6c5",
+                    "on-primary-fixed": "#1c1b1b",
+                    "on-secondary-container": "#ff9997",
+                    "surface-container-high": "#282a2b",
+                    "on-surface": "#e2e2e2",
+                    "on-tertiary": "#3c2f00",
+                    "outline-variant": "#444748",
+                    "on-secondary": "#680011",
+                    "on-surface-variant": "#c4c7c7",
+                    "tertiary": "#e9c349",
+                    "surface-tint": "#c9c6c5",
+                    "surface-container": "#1e2020",
+                    "error-container": "#93000a",
+                    "inverse-surface": "#e2e2e2",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "tertiary-fixed": "#ffe088",
+                    "inverse-on-surface": "#2f3131",
+                    "on-secondary-fixed-variant": "#881c25",
+                    "on-primary": "#313030",
+                    "secondary-container": "#881c25",
+                    "on-primary-fixed-variant": "#474646",
+                    "surface-bright": "#37393a",
+                    "secondary-fixed-dim": "#ffb3b1",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#947600",
+                    "surface-container-lowest": "#0c0f0f",
+                    "on-tertiary-fixed": "#241a00",
+                    "primary-fixed-dim": "#c9c6c5",
+                    "on-primary-container": "#7b7979",
+                    "on-secondary-fixed": "#410007",
+                    "tertiary-container": "#0e0900",
+                    "outline": "#8e9192",
+                    "primary-container": "#0a0a0a",
+                    "surface-dim": "#121414",
+                    "surface-container-low": "#1a1c1c",
+                    "secondary-fixed": "#ffdad8",
+                    "surface": "#121414",
+                    "on-error": "#690005",
+                    "surface-variant": "#333535",
+                    "background": "#121414",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#e5e2e1",
+                    "on-background": "#e2e2e2",
+                    "inverse-primary": "#5f5e5e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "margin-desktop": "64px",
+                    "gutter-md": "24px",
+                    "margin-mobile": "20px",
+                    "gutter-sm": "16px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Libre Caslon Text"],
+                    "label-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "label-sm": ["Manrope"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0.8) 100%);
+        }
+        .card-overlay {
+            background: linear-gradient(to bottom, rgba(136, 28, 37, 0) 0%, rgba(136, 28, 37, 0.4) 100%);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #121414;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #444748;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-desktop py-base max-w-[1200px] mx-auto w-full">
+<a href="../carnes_del_rancho_inicio/code.html" class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest hover:text-tertiary transition-colors">
+                Carnes del Rancho
+            </a>
+<nav class="hidden md:flex gap-gutter-md">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="../categor_a_res_carnes_del_rancho/code.html">Res</a>
+<a class="font-label-md text-label-md text-tertiary border-b-2 border-tertiary pb-1" href="#">Cerdo</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="../categor_a_pollo_carnes_del_rancho/code.html">Pollo</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="../cortes_premium_carnes_del_rancho/code.html">Cortes Premium</a>
+</nav>
+<div class="flex items-center gap-gutter-sm">
+<button class="p-base text-primary hover:text-tertiary transition-all duration-200 scale-95 active:opacity-80">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="p-base text-primary hover:text-tertiary transition-all duration-200 scale-95 active:opacity-80">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Banner -->
+<section class="relative h-[70vh] w-full mt-[64px] flex items-end overflow-hidden">
+<img alt="Cerdo Premium" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOWzTD8an9iJNGQ4inOiFclJBHsEAEgXVEJj4MSlSuagUWeV2hJgUd7P0ZuZReuVh1mN7ZhmFYXGXP9VgUVAl1_DQ-nOck9DZS0GP_S0K6sMs2_dcUfp9P0mlournnaKkQO_Mu6GVWUh9s6lIarHiN_-HKZ_Jzg5nKLYNR8XnfuQAGK57giAdTbSTwqzW4oluLUuGumxrYLrLnfJtEsUgqkuiCpFf1KnRyw8lxPICZdhHqAUo4vbLHo8eMgREApVXkly2aNKSFqop9"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 max-w-[1200px] mx-auto w-full px-margin-desktop pb-section-gap">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest mb-4 block">Selección Gourmet</span>
+<h1 class="font-display-lg text-display-lg mb-4 text-on-surface">Cortes de Cerdo</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                Descubra la suavidad y el sabor inigualable de nuestra selección artesanal. Cerdo de libre pastoreo, curado con maestría y cortado con precisión quirúrgica.
+            </p>
+</div>
+</section>
+<!-- Main Content Cluster -->
+<main class="max-w-[1200px] mx-auto px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter-md">
+<!-- Sidebar Filters -->
+<aside class="md:col-span-3 space-y-gutter-md">
+<div class="sticky top-[100px]">
+<h3 class="font-label-md text-label-md text-on-surface mb-gutter-sm border-b border-outline-variant pb-2">FILTRAR POR</h3>
+<div class="space-y-4">
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface-variant mb-2">TIPO DE CORTE</h4>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded-none bg-transparent border-outline text-tertiary focus:ring-0" type="checkbox"/>
+<span class="font-body-md text-body-md group-hover:text-tertiary transition-colors">Costillas</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded-none bg-transparent border-outline text-tertiary focus:ring-0" type="checkbox"/>
+<span class="font-body-md text-body-md group-hover:text-tertiary transition-colors">Chuletones</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded-none bg-transparent border-outline text-tertiary focus:ring-0" type="checkbox"/>
+<span class="font-body-md text-body-md group-hover:text-tertiary transition-colors">Solomillo</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded-none bg-transparent border-outline text-tertiary focus:ring-0" type="checkbox"/>
+<span class="font-body-md text-body-md group-hover:text-tertiary transition-colors">Artesanales</span>
+</label>
+</div>
+</div>
+<div class="pt-4">
+<h4 class="font-label-sm text-label-sm text-on-surface-variant mb-2">PRECIO</h4>
+<input class="w-full accent-tertiary bg-surface-container-high h-1 rounded-none appearance-none cursor-pointer" type="range"/>
+<div class="flex justify-between mt-2 font-label-sm text-label-sm">
+<span>$200</span>
+<span>$1,200</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<section class="md:col-span-9">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter-md">
+<!-- Chuletón de Cerdo -->
+<div class="bg-surface-container border border-outline-variant group overflow-hidden flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A close-up photograph of a raw, premium thick-cut pork chop with intricate marbling, resting on a dark slate surface. The lighting is cinematic and focused, highlighting the texture and moisture of the meat. Deep shadows and subtle golden accents evoke a luxurious culinary mood consistent with high-end butchery branding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgE5JbFxtp4XpsK77HTabjuLCPGauGGnZEKLNbZ0dN0W5A4HCnPT-BBYAsiHTMJiRXl6pYdomv2NXBpgHPDWcIG8LVAYXFxpcHSBOBpwHGrK4hOytBsBKhgxm7pfG1M_OjSdgaiMOGjRoGG_0Aeh6vLshjE73DDciIseA3nhK_EJzKC0rWAQIpFzGPR2Rpk3DgzWGfsnLfP5vkeyk5XoRsHiOVNCyn1m2T42AyrrqaTm1GikHIsofm2tsbth-OPGqSOxTVXpEjBhKQ"/>
+<div class="absolute inset-0 card-overlay"></div>
+<div class="absolute top-4 right-4">
+<span class="bg-surface-container-lowest border border-tertiary text-tertiary font-label-sm text-label-sm px-2 py-1 uppercase">Fresh Today</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Chuletón de Cerdo</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 uppercase">Corte Hueso Largo • 450g aprox.</p>
+</div>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Precio por kg</span>
+<span class="font-display-lg text-[24px] text-tertiary">$480.00</span>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-background font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary transition-all duration-300 active:scale-95">
+                                Agregar al carrito
+                            </button>
+</div>
+</div>
+</div>
+<!-- Costillas Baby Back -->
+<div class="bg-surface-container border border-outline-variant group overflow-hidden flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A full rack of raw baby back ribs displayed on a rustic wooden butcher's block. The scene is illuminated with low-key studio lighting that emphasizes the rich red meat and pearly white fat. The background is a deep, dark charcoal, creating a minimalist and gourmet aesthetic suitable for a premium meat brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkAY4AsvK9DRLZ-5bBJCJ0h_HXs2tdxrhK0tQftPftOmKg3V8CeTTMsGhdK5moN5kqRQMnCLgfdW932D32s2v3i90yW8vlUG9UAqEhsvPxpJE5-7IsQSBhXH9ozsaHO4VbtAko0h5tSVVOooazStgLDVD2vyuh8JfUPes24QSjVT2YvEcheli3WkvTJrP4uZkDk8_okhe282rmAwjD51k08eWGO7_mf4-aIAI0Yz0MOqmJl6bREmtKq0aqGSW_Lw27t9xoMVBTl_9e"/>
+<div class="absolute inset-0 card-overlay"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Costillas Baby Back</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 uppercase">Rack Completo • 1.2kg aprox.</p>
+</div>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Precio por kg</span>
+<span class="font-display-lg text-[24px] text-tertiary">$320.00</span>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-background font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary transition-all duration-300 active:scale-95">
+                                Agregar al carrito
+                            </button>
+</div>
+</div>
+</div>
+<!-- Solomillo Premium -->
+<div class="bg-surface-container border border-outline-variant group overflow-hidden flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A pristine, lean pork tenderloin resting on a clean white marble surface. The lighting is bright yet high-contrast, highlighting the smooth texture of the solomillo. The overall composition is elegant and minimalist, emphasizing the hygienic and premium nature of the gourmet meat products." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8m26AUEo3sXmtxQM0fpy8dHPsXLRv3O7EdZy8bjiAOocA5ESCy25GZPJ2ucDNsKZ60JvNWUWo3sU9zW3Nj1o4-ij7KscEmq8o7jU0hIft4WDCDByjrXdHjbyTkbFsN3QJA6Yi8e-gOJl2asDdiveR04g9Jr9376XqbqVyhD2nh9oI5HFsrl5pqzA_SmN4cvjAlkqL9xGozQv_EuAhHZWBstBJ5LMmzcL_BGIgMwz22YXrIhwcpgBmWR4f2bDrnwKN_fFDkwitzReU"/>
+<div class="absolute inset-0 card-overlay"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Solomillo Premium</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 uppercase">Corte Magro • 600g aprox.</p>
+</div>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Precio por kg</span>
+<span class="font-display-lg text-[24px] text-tertiary">$590.00</span>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-background font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary transition-all duration-300 active:scale-95">
+                                Agregar al carrito
+                            </button>
+</div>
+</div>
+</div>
+<!-- Tocino Artesanal -->
+<div class="bg-surface-container border border-outline-variant group overflow-hidden flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Slabs of thick-cut artisanal bacon with visible salt crystals and peppercorns, arranged artistically on a dark wooden board. The lighting is moody and visceral, with highlights reflecting off the cured fat. The color palette features deep reds, smoky blacks, and cream whites, aligned with a premium gourmet identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoj_U9ZB2YXGScdxQIgOD8zSNVVpEjyFnvScjNahXaSraBQa-e0JC9NGPLnDxPBI8PkiMZOqSZHKXMFxtXrR1T3aHSPFi21w4uRs-Nqp96d9vDxZ4iiXEZeB5iGIR6_3bg_mzRrtJ0gS5tJYDJ_eRG2XqxJIaluM5J1TTfrbdrYESXowUPVXZ0roRNfr6r91VH4DyJuoxQHx0GluIsvQg-cfxSym2NL5Xn7Wxf8vtC1sxEe-N2UDtbUKWpoXcAx0UTiYVydwNovzkk"/>
+<div class="absolute inset-0 card-overlay"></div>
+<div class="absolute top-4 right-4">
+<span class="bg-surface-container-lowest border border-tertiary text-tertiary font-label-sm text-label-sm px-2 py-1 uppercase">Ahumado</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Tocino Artesanal</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 uppercase">Curado en Casa • 500g aprox.</p>
+</div>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Precio por kg</span>
+<span class="font-display-lg text-[24px] text-tertiary">$410.00</span>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-background font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary transition-all duration-300 active:scale-95">
+                                Agregar al carrito
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-md px-margin-desktop py-section-gap max-w-[1200px] mx-auto w-full">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">
+                    Carnes del Rancho
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Excelencia en cortes desde la granja hasta su mesa. Tradición y calidad garantizada.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase">Navegación</h4>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Ubicación</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Horarios</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contacto</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Aviso de Privacidad</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase">Contacto</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Av. de la Ganadería 123<br/>
+                    Monterrey, NL<br/>
+                    +52 (81) 1234 5678
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase">Boletín</h4>
+<div class="relative">
+<input class="w-full bg-transparent border-b border-outline-variant py-2 font-body-md text-body-md focus:border-tertiary focus:ring-0 outline-none" placeholder="Su correo electrónico" type="email"/>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 text-tertiary">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-margin-desktop py-base border-t border-outline-variant/30 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+                © 2024 Carnes del Rancho. Excelencia en Cortes.
+            </p>
+</div>
+</footer>
+</body></html>

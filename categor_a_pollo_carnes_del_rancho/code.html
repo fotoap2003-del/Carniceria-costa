@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "secondary": "#ffb3b1",
+                  "on-tertiary-fixed-variant": "#574500",
+                  "surface-container-highest": "#333535",
+                  "primary": "#c9c6c5",
+                  "on-primary-fixed": "#1c1b1b",
+                  "on-secondary-container": "#ff9997",
+                  "surface-container-high": "#282a2b",
+                  "on-surface": "#e2e2e2",
+                  "on-tertiary": "#3c2f00",
+                  "outline-variant": "#444748",
+                  "on-secondary": "#680011",
+                  "on-surface-variant": "#c4c7c7",
+                  "tertiary": "#e9c349",
+                  "surface-tint": "#c9c6c5",
+                  "surface-container": "#1e2020",
+                  "error-container": "#93000a",
+                  "inverse-surface": "#e2e2e2",
+                  "tertiary-fixed-dim": "#e9c349",
+                  "tertiary-fixed": "#ffe088",
+                  "inverse-on-surface": "#2f3131",
+                  "on-secondary-fixed-variant": "#881c25",
+                  "on-primary": "#313030",
+                  "secondary-container": "#881c25",
+                  "on-primary-fixed-variant": "#474646",
+                  "surface-bright": "#37393a",
+                  "secondary-fixed-dim": "#ffb3b1",
+                  "on-error-container": "#ffdad6",
+                  "on-tertiary-container": "#947600",
+                  "surface-container-lowest": "#0c0f0f",
+                  "on-tertiary-fixed": "#241a00",
+                  "primary-fixed-dim": "#c9c6c5",
+                  "on-primary-container": "#7b7979",
+                  "on-secondary-fixed": "#410007",
+                  "tertiary-container": "#0e0900",
+                  "outline": "#8e9192",
+                  "primary-container": "#0a0a0a",
+                  "surface-dim": "#121414",
+                  "surface-container-low": "#1a1c1c",
+                  "secondary-fixed": "#ffdad8",
+                  "surface": "#121414",
+                  "on-error": "#690005",
+                  "surface-variant": "#333535",
+                  "background": "#121414",
+                  "error": "#ffb4ab",
+                  "primary-fixed": "#e5e2e1",
+                  "on-background": "#e2e2e2",
+                  "inverse-primary": "#5f5e5e"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.125rem",
+                  "lg": "0.25rem",
+                  "xl": "0.5rem",
+                  "full": "0.75rem"
+          },
+          "spacing": {
+                  "section-gap": "120px",
+                  "margin-desktop": "64px",
+                  "gutter-md": "24px",
+                  "margin-mobile": "20px",
+                  "gutter-sm": "16px",
+                  "base": "8px"
+          },
+          "fontFamily": {
+                  "display-lg": ["Libre Caslon Text"],
+                  "label-md": ["Manrope"],
+                  "body-lg": ["Manrope"],
+                  "headline-lg-mobile": ["Libre Caslon Text"],
+                  "label-sm": ["Manrope"],
+                  "headline-md": ["Libre Caslon Text"],
+                  "headline-lg": ["Libre Caslon Text"],
+                  "body-md": ["Manrope"]
+          },
+          "fontSize": {
+                  "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                  "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                  "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                  "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                  "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                  "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                  "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                  "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .hero-overlay {
+      background: linear-gradient(to bottom, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 0.9) 100%);
+    }
+    .card-gradient {
+      background: linear-gradient(to bottom, rgba(136, 28, 37, 0) 0%, rgba(136, 28, 37, 0.2) 100%);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopNavBar -->
+<header class="bg-background dark:bg-background border-b border-outline-variant docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center px-margin-desktop py-base max-w-[1200px] mx-auto w-full">
+<a href="../carnes_del_rancho_inicio/code.html" class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest hover:text-tertiary transition-colors">
+        Carnes del Rancho
+      </a>
+<nav class="hidden md:flex items-center gap-gutter-md">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="../categor_a_res_carnes_del_rancho/code.html">Res</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="../categor_a_cerdo_carnes_del_rancho/code.html">Cerdo</a>
+<a class="font-label-md text-label-md text-tertiary border-b-2 border-tertiary pb-1" href="#">Pollo</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="../cortes_premium_carnes_del_rancho/code.html">Cortes Premium</a>
+</nav>
+<div class="flex items-center gap-gutter-sm">
+<button class="material-symbols-outlined text-primary hover:text-tertiary transition-all duration-200 scale-95 active:opacity-80">shopping_cart</button>
+<button class="material-symbols-outlined text-primary hover:text-tertiary transition-all duration-200 scale-95 active:opacity-80">person</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Banner -->
+<section class="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
+<img alt="Banner Pollo Carnes del Rancho" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFgotsCMFIafp3vFKVP9NWIJvTO8fjfvnT1OXbQ8Lj2QN7p1-qEyz7dcZmfJipZ1y1u99z09KhKGr2k3AY5g196JpFY8PHYvJa2HHoe4jTLHzykbAM4Wph_NOnt7Hq-F5QgWNt0hPTGr-yOcJY-Tpvrm3nXF2aTasLyhCGTNFwhV8gB70M3uApTBvEqfuL6n8s9jDfS2lim72PEwkl8wfXKx5eO6BqcL41CqgHeP-WKIxX3PxjltdpN5IR3P1q662OfaKat7h4xg_B"/>
+<div class="absolute inset-0 hero-overlay flex flex-col justify-end px-margin-desktop pb-section-gap">
+<div class="max-w-[1200px] mx-auto w-full">
+<span class="font-label-md text-label-md text-tertiary mb-4 block uppercase tracking-widest">Selección de Granja</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6">Pollo de Excelencia</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Desde aves enteras premium hasta cortes orgánicos seleccionados a mano. Criado con los más altos estándares para garantizar jugosidad y sabor inigualable.
+          </p>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-margin-desktop py-section-gap flex flex-col md:flex-row gap-gutter-md">
+<!-- Side Filters -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="sticky top-24 space-y-8">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase mb-4">Filtrar por</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm bg-surface-container-high border-outline-variant text-tertiary focus:ring-tertiary" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Orgánico</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm bg-surface-container-high border-outline-variant text-tertiary focus:ring-tertiary" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Premium</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm bg-surface-container-high border-outline-variant text-tertiary focus:ring-tertiary" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Adobados</span>
+</label>
+</div>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase mb-4">Disponibilidad</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="bg-surface-container-high border-outline-variant text-tertiary focus:ring-tertiary" name="stock" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Entrega Hoy</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="bg-surface-container-high border-outline-variant text-tertiary focus:ring-tertiary" name="stock" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Todo el catálogo</span>
+</label>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant">
+<button class="w-full py-3 bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all duration-300">
+              LIMPIAR FILTROS
+            </button>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-md">
+<!-- Product Card: Pechuga Orgánica -->
+<div class="group bg-[#141414] border border-[#262626] overflow-hidden flex flex-col">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A macro cinematic shot of fresh raw organic chicken breast fillets arranged on a dark slate surface. Minimalist dramatic lighting highlights the smooth texture and natural pink hues of the poultry. Subtle herbs like rosemary and coarse sea salt grains are scattered around, creating an atmosphere of high-end gourmet culinary preparation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxyqAb8-vSaxoGO3o2FnD3g5YTDLkJeEdYZrtOCbSHFzchIDBspX_H9ZnZdkfxsWmYX-r9dlSc-vygQunWEfVgQkYn-5O_aA7p6GfThKkqZ2cSILqhWoGU70oTwZxm07VoH1zVkrCxFzGTAA7MM78jkRof7pDFo_i_QH1nT4jMSOoL5F_7un5IHCLrQXSTBBPvfUC2sg3hKGMnGAbY9BQFrk34PHqK3F_hnGq2Zml2t2OMKt3u2whU7Z6JV4zo8yx33SzxvqSf6IqS"/>
+<div class="absolute inset-0 card-gradient"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 bg-[#141414] border border-tertiary text-tertiary font-label-sm text-label-sm uppercase">Orgánico</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Pechuga Orgánica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">Limpieza artesanal, sin piel ni hueso. Ideal para preparaciones saludables.</p>
+<div class="flex items-end justify-between mb-6">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Precio por kg</p>
+<p class="font-headline-md text-headline-md text-tertiary">$245.00</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Peso aprox.</p>
+<p class="font-body-md text-body-md text-on-surface">500g - 700g</p>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-background font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 active:scale-95">
+                Agregar al carrito
+              </button>
+</div>
+</div>
+<!-- Product Card: Muslo Deshuesado -->
+<div class="group bg-[#141414] border border-[#262626] overflow-hidden flex flex-col">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up artistic photography of raw boneless chicken thighs with skin on, placed on a premium dark ceramic platter. The lighting is moody and focused, accentuating the golden undertones of the skin and the fresh quality of the meat. A professional chef's aesthetic with deep blacks and rich reds from the raw product, suggesting elite provenance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACwtlWJl1AhgSk48oOPiv25VGdkzew39703PPGUeliyj4P6fqWAV6Xp3qZ9LJA0dNNzxhmYlAV-RlKIZve8resilkP-vbr2BiDPNOcCT7qIA3nWglBpTrZIrmQ1F4LtpY6QSH156XHqWE8Roqfj9220l9vXOXEaWqQQts26vrzyKkEysTJI8tV3naVOj5DzMDtHohPcl5vXjBmLJhreJt_tZVhw4dUK2qDqZj_1RMT78BNyxKMj4BVV7T_IEcwyXL4QmHcJyCm84ou"/>
+<div class="absolute inset-0 card-gradient"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 bg-[#141414] border border-tertiary text-tertiary font-label-sm text-label-sm uppercase">Corte Premium</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Muslo deshuesado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">La pieza más jugosa del pollo, perfecta para parrilladas o salteados gourmet.</p>
+<div class="flex items-end justify-between mb-6">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Precio por kg</p>
+<p class="font-headline-md text-headline-md text-tertiary">$189.00</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Peso aprox.</p>
+<p class="font-body-md text-body-md text-on-surface">1.0kg - 1.2kg</p>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-background font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 active:scale-95">
+                Agregar al carrito
+              </button>
+</div>
+</div>
+<!-- Product Card: Pollo Entero Premium -->
+<div class="group bg-[#141414] border border-[#262626] overflow-hidden flex flex-col">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A whole raw premium chicken presented in a cinematic gourmet style. The bird is perfectly trussed on a rustic dark wooden board, surrounded by aromatic herbs and whole black peppercorns. The lighting is focused and warm, highlighting the high-quality texture and healthy appearance of the poultry. Elegant dark atmosphere consistent with a luxury butcher shop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcWXDvb6D863DiHn0-9m7UQ0-IoL6HF9zpZuk03egDa5g-mGlHaJpjvJXfVR1lvzObRja_tHiPHMA2VhgDK8BgjrMl6O3-XHaeL4TcZco_1qnLe9UrYdFYzxAIJhVd8Oy2zp03iM65PKjTljkKHzNvJIAtPlKE4Bt1QvlC-yoXvBUGy9qdCFo5NzR8XY2z-hbWegzl0IouhQ19pETN-M-64hevf42PEDNmh1K1liwiDp4EuJNGuBS1OoD7EM_Cl8KuhX4YK6KcjXgJ"/>
+<div class="absolute inset-0 card-gradient"></div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Pollo Entero Premium</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">Selección especial de granja. Carne firme y piel fina para el rostizado perfecto.</p>
+<div class="flex items-end justify-between mb-6">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Precio por kg</p>
+<p class="font-headline-md text-headline-md text-tertiary">$115.00</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Peso aprox.</p>
+<p class="font-body-md text-body-md text-on-surface">2.2kg - 2.5kg</p>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-background font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 active:scale-95">
+                Agregar al carrito
+              </button>
+</div>
+</div>
+<!-- Product Card: Alitas Adobadas -->
+<div class="group bg-[#141414] border border-[#262626] overflow-hidden flex flex-col">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Raw chicken wings coated in a vibrant, rich deep red marinade, styled professionally on a dark slate background. The marinade has a glistening, artisanal texture with visible flakes of spices and chili. High-contrast lighting creates a visceral and appetizing look, emphasizing the gourmet quality of the 'Carnes del Rancho' secret recipe marinade." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCytrxTIDkB59g4DnEq0crss5J33F0m_OB_hbTPTsVXglJX2yKPk3pPCKXM1oom0LBmkmTuCDal_LWpV5tQWccwJk3Sxi80M0QDtQG0f93mP85QZ_F0ZepSknYQ1ctu2GMRll86NCNC12Ykzb-fJmffvcMLGX4Xk0BTo2o0aWarCWiPEi1R_URtoFkbfHhbp32XWm5Ti2tiJd9OFBrvcaVKiZ95LyQmQyztpxNhiYwUtRG3t8r-8G_TSL_PMUR3WQKwvgv_ZZWEHjai"/>
+<div class="absolute inset-0 card-gradient"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container border border-on-secondary-container font-label-sm text-label-sm uppercase">Receta de la Casa</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Alitas Adobadas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">Marinadas en nuestra mezcla secreta de chiles secos y especias por 24 horas.</p>
+<div class="flex items-end justify-between mb-6">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Precio por kg</p>
+<p class="font-headline-md text-headline-md text-tertiary">$195.00</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Peso aprox.</p>
+<p class="font-body-md text-body-md text-on-surface">1.0kg</p>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-background font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 active:scale-95">
+                Agregar al carrito
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant full-width bottom-0">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-md px-margin-desktop py-section-gap max-w-[1200px] mx-auto w-full">
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md text-on-surface">Carnes del Rancho</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Excelencia en cada corte, tradición en cada entrega.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase">Empresa</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Ubicación</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Horarios</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contacto</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Aviso de Privacidad</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase">Categorías</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Res</a>
+<a class="font-body-md text-body-md text-tertiary" href="#">Pollo</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Cerdo</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Embutidos</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase">Newsletter</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Recibe ofertas exclusivas y recetas gourmet.</p>
+<div class="flex">
+<input class="bg-surface border-b border-outline-variant focus:border-tertiary focus:ring-0 w-full font-body-md text-body-md text-on-surface py-2 outline-none" placeholder="Tu email" type="email"/>
+<button class="material-symbols-outlined text-tertiary ml-2">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-margin-desktop py-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4 opacity-90">
+<div class="font-body-md text-body-md text-on-surface-variant">
+        © 2024 Carnes del Rancho. Excelencia en Cortes.
+      </div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-tertiary cursor-pointer transition-colors">social_leaderboard</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-tertiary cursor-pointer transition-colors">infrared</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#e2e2e2",
+                        "surface": "#121414",
+                        "primary-container": "#0a0a0a",
+                        "surface-bright": "#37393a",
+                        "primary": "#c9c6c5",
+                        "inverse-primary": "#5f5e5e",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-container": "#1e2020",
+                        "surface-dim": "#121414",
+                        "on-tertiary-container": "#947600",
+                        "inverse-on-surface": "#2f3131",
+                        "primary-fixed": "#e5e2e1",
+                        "on-primary-fixed": "#1c1b1b",
+                        "secondary": "#ffb3b1",
+                        "secondary-fixed": "#ffdad8",
+                        "surface-variant": "#333535",
+                        "surface-container-highest": "#333535",
+                        "on-secondary-fixed": "#410007",
+                        "on-tertiary": "#3c2f00",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "background": "#121414",
+                        "secondary-container": "#881c25",
+                        "surface-container-low": "#1a1c1c",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "on-surface": "#e2e2e2",
+                        "surface-container-lowest": "#0c0f0f",
+                        "outline-variant": "#444748",
+                        "inverse-surface": "#e2e2e2",
+                        "surface-tint": "#c9c6c5",
+                        "on-error": "#690005",
+                        "tertiary-container": "#0e0900",
+                        "on-secondary-container": "#ff9997",
+                        "on-primary-container": "#7b7979",
+                        "on-primary": "#313030",
+                        "on-primary-fixed-variant": "#474646",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#680011",
+                        "outline": "#8e9192",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#282a2b",
+                        "on-secondary-fixed-variant": "#881c25",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "on-surface-variant": "#c4c7c7",
+                        "on-tertiary-fixed": "#241a00",
+                        "error": "#ffb4ab",
+                        "tertiary": "#e9c349"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter-sm": "16px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "gutter-md": "24px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Manrope"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "label-md": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cinematic-overlay {
+            background: linear-gradient(to bottom, rgba(136, 28, 37, 0) 0%, rgba(136, 28, 37, 0.4) 100%);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .custom-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile h-16 bg-background dark:bg-background border-b border-surface-variant dark:border-surface-variant z-50">
+<div class="flex items-center gap-base transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined text-on-background">menu</span>
+</div>
+<h1 class="font-headline-md text-headline-md uppercase tracking-widest text-on-background">METICULOUS</h1>
+<div class="flex items-center gap-base transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined text-on-background">shopping_bag</span>
+</div>
+</header>
+<!-- Content Canvas -->
+<main class="pt-24 pb-32">
+<!-- Category Hero Section -->
+<section class="px-margin-mobile mb-gutter-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile mb-base">Res</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Our curated selection of premium bovine cuts, ethically sourced and aged for peak culinary excellence.</p>
+</section>
+<!-- Horizontal Filter Bar -->
+<section class="mb-gutter-md">
+<div class="flex overflow-x-auto custom-scrollbar px-margin-mobile gap-base py-2">
+<button class="bg-surface-bright text-on-background font-label-md text-label-md px-4 py-2 rounded-full whitespace-nowrap active:scale-95 duration-150">
+                    All Cuts
+                </button>
+<button class="border border-outline-variant text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-full whitespace-nowrap active:scale-95 duration-150">
+                    Dry-Aged
+                </button>
+<button class="border border-outline-variant text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-full whitespace-nowrap active:scale-95 duration-150">
+                    Wagyu Reserve
+                </button>
+<button class="border border-outline-variant text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-full whitespace-nowrap active:scale-95 duration-150">
+                    Steakhouse Cuts
+                </button>
+<button class="border border-outline-variant text-on-surface-variant font-label-md text-label-md flex items-center gap-1 px-4 py-2 rounded-full whitespace-nowrap active:scale-95 duration-150">
+                    Price <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Product Bento/Grid -->
+<section class="px-margin-mobile grid grid-cols-1 gap-gutter-md">
+<!-- Featured Card (Wide) -->
+<div class="group relative bg-surface-container-low border border-surface-variant overflow-hidden rounded-lg">
+<div class="aspect-[1.50] w-full overflow-hidden">
+<img alt="Premium Ribeye Selection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugdcXqv-sLiZj3_JbF_hfOVSWhBNiBXZNGGhDPWAsYrE1lS9zpHQXxWbwvH_GjxUv5FtMVNdxtLhxTt2ayMZaNt381icmbXV-1v7Z68u0O_aMiNRXEnaLQnkx1gm4ifh2zXVw-FWWRmqoLOnTSF3uaYY9pdQYTuLYJx8p6Yoa_akMr6roxyVYcSxBWpQTq1nHeDb_CSODv0dOomkrp3lZtuTODsfOWRXHRp3lF99EiBQQ023CajsM6N9JQf"/>
+<div class="absolute inset-0 cinematic-overlay"></div>
+</div>
+<div class="p-gutter-sm flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase mb-1 block">Signature Selection</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Premium Ribeye</h3>
+</div>
+<span class="font-headline-md text-headline-md text-primary">$42.50<span class="text-label-sm">/kg</span></span>
+</div>
+<div class="flex gap-2 mb-2">
+<span class="bg-surface-container-highest border border-tertiary-fixed-dim text-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded">Dry-Aged</span>
+<span class="bg-surface-container-highest border border-outline-variant text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded">Grade A5</span>
+</div>
+<button class="w-full bg-on-background text-background font-label-md text-label-md py-4 uppercase tracking-widest transition-colors hover:bg-tertiary-fixed-dim active:scale-95 duration-150">
+                        Agregar
+                    </button>
+</div>
+</div>
+<!-- Two Column Grid for rest -->
+<div class="grid grid-cols-1 gap-gutter-md">
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-low border border-surface-variant overflow-hidden rounded-lg">
+<div class="aspect-square relative overflow-hidden bg-surface-dim">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a marbled New York Strip steak on a dark textured background with grains of salt. The lighting is focused and dramatic, highlighting the rich red texture of the raw meat and the delicate white fat marbling. The overall aesthetic is gourmet and high-end culinary photography." style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ugdcXqv-sLiZj3_JbF_hfOVSWhBNiBXZNGGhDPWAsYrE1lS9zpHQXxWbwvH_GjxUv5FtMVNdxtLhxTt2ayMZaNt381icmbXV-1v7Z68u0O_aMiNRXEnaLQnkx1gm4ifh2zXVw-FWWRmqoLOnTSF3uaYY9pdQYTuLYJx8p6Yoa_akMr6roxyVYcSxBWpQTq1nHeDb_CSODv0dOomkrp3lZtuTODsfOWRXHRp3lF99EiBQQ023CajsM6N9JQf')"></div>
+<div class="absolute inset-0 cinematic-overlay opacity-60"></div>
+<div class="absolute top-2 right-2">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-1 uppercase">Limited</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface">New York Strip</h3>
+<p class="font-headline-md text-headline-md text-primary">$38.00<span class="text-label-sm">/kg</span></p>
+<button class="w-full bg-on-background text-background font-label-md text-label-md py-3 uppercase tracking-widest transition-colors hover:bg-tertiary-fixed-dim active:scale-95 duration-150 mt-2">
+                            Agregar
+                        </button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-low border border-surface-variant overflow-hidden rounded-lg">
+<div class="aspect-square relative overflow-hidden bg-surface-dim">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A thick cut of Picaña meat resting on a dark slate board. The fat cap is perfectly trimmed and white, contrasting against the deep crimson of the beef. Fine sea salt is scattered around the cut, under moody atmospheric studio lighting that emphasizes the quality and freshness." style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ugdcXqv-sLiZj3_JbF_hfOVSWhBNiBXZNGGhDPWAsYrE1lS9zpHQXxWbwvH_GjxUv5FtMVNdxtLhxTt2ayMZaNt381icmbXV-1v7Z68u0O_aMiNRXEnaLQnkx1gm4ifh2zXVw-FWWRmqoLOnTSF3uaYY9pdQYTuLYJx8p6Yoa_akMr6roxyVYcSxBWpQTq1nHeDb_CSODv0dOomkrp3lZtuTODsfOWRXHRp3lF99EiBQQ023CajsM6N9JQf')"></div>
+<div class="absolute inset-0 cinematic-overlay opacity-60"></div>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface">Picaña Brasileira</h3>
+<p class="font-headline-md text-headline-md text-primary">$34.20<span class="text-label-sm">/kg</span></p>
+<button class="w-full bg-on-background text-background font-label-md text-label-md py-3 uppercase tracking-widest transition-colors hover:bg-tertiary-fixed-dim active:scale-95 duration-150 mt-2">
+                            Agregar
+                        </button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-low border border-surface-variant overflow-hidden rounded-lg">
+<div class="aspect-square relative overflow-hidden bg-surface-dim">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Professional display of a Tomahawk steak with a long bone attached, seasoned with cracked black pepper and fresh rosemary sprigs. The meat is vibrant red and the scene is set in a dark, sophisticated butcher shop environment with cinematic backlighting that creates deep shadows and elegant highlights." style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ugdcXqv-sLiZj3_JbF_hfOVSWhBNiBXZNGGhDPWAsYrE1lS9zpHQXxWbwvH_GjxUv5FtMVNdxtLhxTt2ayMZaNt381icmbXV-1v7Z68u0O_aMiNRXEnaLQnkx1gm4ifh2zXVw-FWWRmqoLOnTSF3uaYY9pdQYTuLYJx8p6Yoa_akMr6roxyVYcSxBWpQTq1nHeDb_CSODv0dOomkrp3lZtuTODsfOWRXHRp3lF99EiBQQ023CajsM6N9JQf')"></div>
+<div class="absolute inset-0 cinematic-overlay opacity-60"></div>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface">Tomahawk Heritage</h3>
+<p class="font-headline-md text-headline-md text-primary">$55.00<span class="text-label-sm">/kg</span></p>
+<button class="w-full bg-on-background text-background font-label-md text-label-md py-3 uppercase tracking-widest transition-colors hover:bg-tertiary-fixed-dim active:scale-95 duration-150 mt-2">
+                            Agregar
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Trust Section -->
+<section class="mt-section-gap px-margin-mobile text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h4 class="font-headline-md text-headline-md mb-2">The Meticulous Standard</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-gutter-md">Every cut is inspected by our master butchers and shipped in temperature-controlled sustainable packaging.</p>
+<div class="border-b border-outline-variant max-w-xs mx-auto mb-gutter-md">
+<input class="w-full bg-transparent border-none focus:ring-0 text-center font-body-md py-2 placeholder:text-outline" placeholder="Join the Connoisseur List" type="email"/>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe h-20 bg-surface-container-highest dark:bg-surface-container-highest border-t border-outline-variant">
+<!-- Shop (Active) -->
+<a class="flex flex-col items-center justify-center text-on-background bg-surface-bright rounded-full p-2 translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-label-sm text-label-sm uppercase tracking-tighter mt-1">Shop</span>
+</a>
+<!-- Cuts -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-label-sm text-label-sm uppercase tracking-tighter mt-1">Cuts</span>
+</a>
+<!-- Origins -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-tighter mt-1">Origins</span>
+</a>
+<!-- Cart -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors duration-200 relative" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-label-sm text-label-sm uppercase tracking-tighter mt-1">Cart</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-secondary rounded-full"></span>
+</a>
+</nav>
+</body></html>
